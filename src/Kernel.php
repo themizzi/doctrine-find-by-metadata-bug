@@ -4,7 +4,7 @@ namespace App;
 
 use App\Command\CreateEntityACommand;
 use App\Command\CreateEntityBCommand;
-use App\Command\FindEntityBByNewEntityDCommand;
+use App\Command\FindEntityBByNewEntityCCommand;
 use Doctrine\Bundle\DoctrineBundle\DoctrineBundle;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
@@ -93,7 +93,7 @@ class Kernel extends \Symfony\Component\HttpKernel\Kernel
         $c->register(CreateEntityBCommand::class, CreateEntityBCommand::class)
             ->setAutowired(true)
             ->setAutoconfigured(true);
-        $c->register(FindEntityBByNewEntityDCommand::class, FindEntityBByNewEntityDCommand::class)
+        $c->register(FindEntityBByNewEntityCCommand::class, FindEntityBByNewEntityCCommand::class)
             ->setAutoconfigured(true)
             ->setAutowired(true);
     }

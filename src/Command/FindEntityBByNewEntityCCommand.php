@@ -15,7 +15,7 @@ use Symfony\Component\Console\Output\OutputInterface;
  * @package App\Command
  * @author  Joe Mizzi <themizzi@me.com>
  */
-class FindEntityBByNewEntityDCommand extends Command
+class FindEntityBByNewEntityCCommand extends Command
 {
     private $entityManager;
 
@@ -27,7 +27,7 @@ class FindEntityBByNewEntityDCommand extends Command
 
     protected function configure()
     {
-        $this->setName('find:entity-b-by-new-entity-a');
+        $this->setName('find:entity-b-by-new-entity-c');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
